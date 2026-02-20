@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <h1>ON/OFF BULB</h1><br>
+    <p id="bulb" style="height:300px; width:300px; background-image:url('bulbOff.jpeg'); background-size:cover"></p>
+    <button style="height:50px; width:100px; color:red; background-color:yellow; border-radius: 20px;" onClick="OnOff()">On/Off</button>
+    <script>
+        function OnOff(){
+            let b=document.getElementById("bulb");
+            if (b.style.backgroundImage==='url("bulbOff.jpeg")'){
+                b.style.backgroundImage='url("bulbOn.jpeg")';  
+            }
+            else{
+                b.style.backgroundImage='url("bulbOff.jpeg")';
+            }
+        }
+    </script>
+     
+</body>
+</html>

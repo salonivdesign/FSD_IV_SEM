@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM- Document object model -->
+     <!-- Dom+Event listener -->
+    <p id="text">this is a text</p>
+    <button onclick="Toggletext()">Show/Hide</button>
+    
+
+    <script>
+        // To toggle the text in the paragraph element we use style.display
+        // none means the element is hidden and block means the element is visible
+        function Toggletext(){
+            let t=document.getElementById("text");
+            if(t.style.display==="none"){
+                t.style.display="block";
+            }
+            else{
+                t.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
