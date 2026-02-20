@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n1" type="number" >
+    <input id="n2" type="number">
+    <button onclick="add()">add</button>
+    <p id="result"></p>
+    <button onclick="sub()">Sub</button>
+    <button onclick="mul()">Mul</button>
+    <button onclick="div()">Div</button>
+
+    <script>
+        function add(){
+            // Number used to convert the string value from input to a number and avoid sapce between two numbers and error will not bbe display.
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML=a+b;
+        }
+        function sub(){
+            // Number used to convert the string value from input to a number and avoid sapce between two numbers and error will not bbe display.
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML=a-b;
+        }
+        function mul(){
+            // Number used to convert the string value from input to a number and avoid sapce between two numbers and error will not bbe display.
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            document.getElementById("result").innerHTML=a*b;
+        }
+        function div(){
+            // Number used to convert the string value from input to a number and avoid sapce between two numbers and error will not bbe display.
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            if (n2===0){
+                document.getElementById("result").innerHTML="CAN NOT DIVIDE BY ZERO";
+            }
+            else{
+                document.getElementById("result").innerHTML=a/b;
+            }
+            
+        }
+    </script>
+</body>
+</html>
